@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         // Permite solicitudes CORS desde el frontend Angular (http://localhost:4200)
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:4200")  // Dirección de tu frontend
+                .allowedOrigins("https://santander-inky.vercel.app")   // Dirección de tu frontend
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*");
     }
